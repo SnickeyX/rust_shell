@@ -16,6 +16,9 @@ fn main() {
                     println!("Failed: {}", e);
                 }
             }
+            "exit" => {
+                std::process::exit(0);
+            }
             command => {
                 // Running the inputted command in a new process (will not work on Windows without going through powershell or cmd)
                 if let Ok(mut curr_process) = std::process::Command::new(command).args(args).spawn()
