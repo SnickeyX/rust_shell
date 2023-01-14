@@ -1,9 +1,10 @@
+![Check + Lint](https://img.shields.io/github/actions/workflow/status/snickeyx/rust_shell/check_and_lint.yml?label=Check%20and%20Lint)
 # A UNIX Shell in Rust
 ## Goals
 - To learn and familiarise myself with Rust 
 - To learn about shells and how they're implemented 
 
-## TODO:
+## TODO (14/01/23):
 - [x] reading in basic commands
 - [x] support for pipes
 - [ ] support for reserved words
