@@ -10,7 +10,7 @@ fn main() {
         let mut commands = input.trim().split(" | ").peekable();
         let mut prev_command = None;
         while let Some(command) = commands.next() {
-            let mut command_with_args = command.trim().split_whitespace();
+            let mut command_with_args = command.split_whitespace();
             let command = command_with_args.next().unwrap();
             let args = command_with_args;
             // To handle shell builtins - this allows us change the state of the shell rather than the specific process handling the command
